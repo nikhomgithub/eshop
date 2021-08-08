@@ -1,0 +1,14 @@
+version: '3'
+services:
+  nginx27:
+    container_name: mynginx27
+    image: nginx
+    ports:
+      - '80:80'
+    volumes:
+      - ../config:/etc/nginx/conf.d
+      - ../client/build:/usr/share/nginx/html
+networks: 
+  default: 
+    external: 
+      name: external-network27

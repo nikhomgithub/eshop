@@ -1,0 +1,4 @@
+server1/node_modules/
+client/node_modules/
+client/build
+mongo/mydb
